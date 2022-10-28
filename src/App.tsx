@@ -10,7 +10,10 @@ export default function App() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/news">News</Link>
+            <Link to="/news/1">News1</Link>
+          </li>
+          <li>
+            <Link to="/news/2">News2</Link>
           </li>
         </ul>
 
@@ -20,10 +23,10 @@ export default function App() {
           <Route exact path="/">
             <HomePage />
           </Route>
-          <Route path="/news">
+          <Route path="/news/:newsId">
             <NewsPage />
           </Route>
         </Switch>
-    </Router>
+    </Router> 
   )
 }
